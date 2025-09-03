@@ -1,0 +1,5 @@
+{
+  "version": "1.0.0",
+  "notes": "• Added Pro Mode for advanced logging and crash dump configuration.\n• Improved UI consistency across all tabs.\n• Fixed a bug with backup file deletion.",
+  "downloadUrl": "https://example.com/downloads/LiteraTool_v1.2.0.zip"
+}
