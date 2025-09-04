@@ -3,64 +3,74 @@
     "RecommendedHardware": {
       "Processor": "2.0+ GHz processor",
       "Memory": {
-        "Recommended": "8 GB RAM",
-        "Minimum": "4 GB RAM"
+        "Minimum": "4 GB RAM",
+        "Recommended": "8 GB RAM"
       },
       "DiskSpace": "Minimum 2 GB hard drive space"
     },
     "OCRHardware": {
       "Processor": "2.0+ GHz processor with minimum dual cores",
       "Memory": {
-        "Recommended": "16 GB RAM",
-        "Minimum": "8 GB RAM"
+        "Minimum": "8 GB RAM",
+        "Recommended": "16 GB RAM"
       },
-      "DiskSpace": "20 MB temporary disk space per PDF file being processed × number of concurrent OCR sessions"
-    },
-    "SupportedEnvironments": {
-      "OperatingSystems": [
-        "Microsoft Windows 11 (64 bit) - 21H2 and above with .NET Framework 4.8.1 installed (22H2 and above include .NET Framework 4.8.1)",
-        "Microsoft Windows 10 (32 bit and 64 bit) - 20H2 and above with .NET Framework 4.8.1 installed"
-      ],
-      "Citrix": [
-        "Microsoft Windows Server 2022 (64 bit) and above",
+      "DiskSpace": "20 MB temporary disk space for each PDF file being processed – multiply by the maximum projected number of concurrent OCR sessions",
+      "Notes": "PDF/Word comparison requires OCR. OCR and text extraction are CPU- and disk-intensive."
+    }
+  },
+  "SupportedEnvironments": {
+    "Notes": "Unless otherwise stated, all environments are the English version with the en-us language set.",
+    "OperatingSystems": [
+      "Microsoft Windows 11 (64-bit) - 21H2 and above with .NET Framework 4.8.1 installed (22H2 and above include .NET Framework 4.8.1)",
+      "Microsoft Windows 10 (32-bit and 64-bit) - 20H2 and above with .NET Framework 4.8.1 installed"
+    ],
+    "Citrix": {
+      "Versions": [
+        "Microsoft Windows Server 2022 (64-bit) and above",
         "Citrix XenApp 7.5",
         "Citrix XenDesktop 7.5"
       ],
-      "OfficeVersions": [
-        "Microsoft Office 2024 (32 bit and 64 bit)",
-        "Microsoft Office 2021 (32 bit and 64 bit)",
+      "Notes": "Check with your Citrix vendor about which Windows operating system supports your version of Citrix."
+    },
+    "MicrosoftOffice": {
+      "Versions": [
+        "Microsoft Office 2024 (32-bit and 64-bit)",
+        "Microsoft Office 2021 (32-bit and 64-bit)",
         "Microsoft Office 365 (desktop)",
-        "Microsoft Office 2019 (32 bit and 64 bit, including click-to-run)",
-        "Microsoft Office 2016 (32 bit and 64 bit, including click-to-run)"
+        "Microsoft Office 2019 (32-bit and 64-bit) — including click-to-run",
+        "Microsoft Office 2016 (32-bit and 64-bit) — including click-to-run"
       ],
       "Notes": [
         "If Litera Compare 11.13.0 is being installed on the same computer as Metadact, Metadact must be version 5.19.0 or later.",
-        "Litera Compare can only be installed in a Windows environment.",
-        "Mac users can use Parallels Desktop or VMware Fusion to emulate Windows, but Litera Compare is not compatible with Mac Mini M1 running Parallels Desktop."
+        "Litera Compare can only be installed in a Windows environment. If you’re a Mac user, you can use a third-party vendor application like Parallels Desktop or VMware Fusion to emulate Windows and then install Litera Compare in the emulator. However, Litera Compare is not compatible with Mac Mini M1 running Parallels Desktop."
+      ]
+    }
+  },
+  "DMSIntegration": {
+    "Notes": "Check with your Document Management System (DMS) vendor about which Windows operating system supports your DMS.",
+    "NetDocuments": [
+      "ndOffice must be installed to use the Litera NetDocuments integration."
+    ],
+    "iManage": {
+      "Clients": [
+        "Work 10 Desktop for Windows 10.0 and above",
+        "Work 10 web client (requires Litera iManage Extension Server (LiMES) or connection to LiMES Cloud)"
+      ],
+      "Notes": [
+        "If you use a Work 10.2 server, it must include iManage Work Web Server 10.2.0.91 (requested from iManage with reference CSAR-2673).",
+        "Microsoft Edge WebView2 is required for iManage integration. If using iManage Work Desktop 10.5 and above, Microsoft Edge WebView2 is likely already installed."
       ]
     },
-    "DMSIntegration": {
-      "NetDocuments": "ndOffice must be installed to use the Litera NetDocuments integration.",
-      "iManage": {
-        "Desktop": "Work 10 Desktop for Windows 10.0 and above",
-        "WebClient": "Work 10 web client - requires Litera iManage Extension Server (LiMES) or LiMES Cloud",
-        "Notes": [
-          "If using a Work 10.2 server, it must include iManage Work Web Server 10.2.0.91 (request from iManage, reference CSAR-2673).",
-          "Microsoft Edge WebView2 is required for iManage integration.",
-          "If using iManage Work Desktop 10.5 and above, Microsoft Edge WebView2 is likely already installed."
-        ]
-      },
-      "MicrosoftSharePoint": [
-        "Microsoft SharePoint Online"
-      ],
-      "OpenText": [
-        "eDOCS DM 16.5 and above",
-        "eDOCS DM 10.0"
-      ],
-      "Worldox": [
-        "GX4 (32-bit only)"
-      ],
-      "Epona": "Supported"
-    }
+    "SharePoint": [
+      "Microsoft SharePoint Online"
+    ],
+    "OpenText": [
+      "eDOCS DM 16.5 and above",
+      "eDOCS DM 10.0"
+    ],
+    "Worldox": [
+      "GX4 (32-bit only)"
+    ],
+    "Epona": []
   }
 }
