@@ -1,0 +1,29 @@
+{
+  "Prerequisites": [
+    {
+      "Name": "Microsoft .NET Framework 4.8 or later",
+      "Description": "Required for general Litera Compare functionality.",
+      "DownloadLink": "https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48"
+    },
+    {
+      "Name": "Microsoft Visual Studio 2010 Tools for Office Runtime",
+      "Description": "Required for Office integration.",
+      "DownloadLink": "https://www.microsoft.com/en-us/download/details.aspx?id=48217"
+    },
+    {
+      "Category": "Litera OCR Module (for comparing scanned PDF files)",
+      "Requirements": [
+        {
+          "Name": "Microsoft Visual Studio C++ Redistributable 2015-2022 for x86 or later",
+          "Description": "Required for OCR functionality.",
+          "DownloadLink": "https://aka.ms/vs/17/release/vc_redist.x86.exe"
+        },
+        {
+          "Name": "Microsoft Visual Studio C++ Redistributable 2015-2022 for x64 or later",
+          "Description": "Required in addition to x86 if the server is a 64-bit system.",
+          "DownloadLink": "https://aka.ms/vs/17/release/vc_redist.x64.exe"
+        }
+      ]
+    }
+  ]
+}

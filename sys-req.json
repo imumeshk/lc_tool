@@ -1,0 +1,135 @@
+{
+  "SystemRequirements": {
+    "RecommendedHardware": {
+      "Processor": {
+        "Minimum": "2.0+ GHz"
+      },
+      "Memory": {
+        "Recommended": "8 GB",
+        "Minimum": "4 GB"
+      },
+      "DiskSpace": {
+        "Minimum": "2 GB"
+      }
+    },
+    "OCRHardware": {
+      "Processor": {
+        "Minimum": "2.0+ GHz dual-core"
+      },
+      "Memory": {
+        "Recommended": "16 GB",
+        "Minimum": "8 GB"
+      },
+      "DiskSpace": {
+        "Requirement": "20 MB per PDF file × concurrent OCR sessions"
+      }
+    },
+    "SupportedEnvironments": {
+      "OperatingSystems": [
+        {
+          "Name": "Microsoft Windows 11 (64-bit)",
+          "MinimumVersion": "21H2",
+          "RecommendedVersion": "22H2",
+          "Requirements": [
+            ".NET Framework 4.8.1 (included in 22H2 and above)"
+          ]
+        },
+        {
+          "Name": "Microsoft Windows 10 (32-bit and 64-bit)",
+          "MinimumVersion": "20H2",
+          "Requirements": [
+            ".NET Framework 4.8.1"
+          ]
+        }
+      ],
+      "Citrix": [
+        {
+          "Name": "Microsoft Windows Server",
+          "MinimumVersion": "2022 (64-bit)"
+        },
+        {
+          "Name": "Citrix XenApp",
+          "MinimumVersion": "7.5"
+        },
+        {
+          "Name": "Citrix XenDesktop",
+          "MinimumVersion": "7.5"
+        }
+      ],
+      "OfficeVersions": [
+        {
+          "Name": "Microsoft Office",
+          "Version": "2024",
+          "Architectures": ["32-bit", "64-bit"]
+        },
+        {
+          "Name": "Microsoft Office",
+          "Version": "2021",
+          "Architectures": ["32-bit", "64-bit"]
+        },
+        {
+          "Name": "Microsoft Office 365",
+          "Type": "Desktop"
+        },
+        {
+          "Name": "Microsoft Office",
+          "Version": "2019",
+          "Architectures": ["32-bit", "64-bit"],
+          "Notes": ["Includes click-to-run installations"]
+        },
+        {
+          "Name": "Microsoft Office",
+          "Version": "2016",
+          "Architectures": ["32-bit", "64-bit"],
+          "Notes": ["Includes click-to-run installations"]
+        }
+      ],
+      "Notes": [
+        "If Litera Compare 11.13.0 is installed on the same computer as Metadact, Metadact must be version 5.19.0 or later.",
+        "Litera Compare can only be installed in a Windows environment.",
+        "Mac users can use Parallels Desktop or VMware Fusion to emulate Windows, but Litera Compare is not compatible with Mac Mini M1 running Parallels Desktop."
+      ]
+    },
+    "DMSIntegration": {
+      "NetDocuments": {
+        "Requirement": "ndOffice must be installed to use the Litera NetDocuments integration."
+      },
+      "iManage": {
+        "Desktop": {
+          "Name": "Work 10 Desktop for Windows",
+          "MinimumVersion": "10.0"
+        },
+        "WebClient": {
+          "Name": "Work 10 Web Client",
+          "Requirement": "Requires Litera iManage Extension Server (LiMES) or LiMES Cloud"
+        },
+        "Notes": [
+          "If using Work 10.2 server, it must include iManage Work Web Server 10.2.0.91 (request from iManage, reference CSAR-2673).",
+          "Microsoft Edge WebView2 is required for iManage integration.",
+          "If using iManage Work Desktop 10.5 and above, Microsoft Edge WebView2 is likely already installed."
+        ]
+      },
+      "MicrosoftSharePoint": [
+        {
+          "Name": "Microsoft SharePoint Online"
+        }
+      ],
+      "OpenText": [
+        {
+          "Name": "eDOCS DM",
+          "MinimumVersion": "10.0",
+          "RecommendedVersion": "16.5 and above"
+        }
+      ],
+      "Worldox": [
+        {
+          "Name": "GX4",
+          "Architecture": "32-bit only"
+        }
+      ],
+      "Epona": {
+        "Supported": true
+      }
+    }
+  }
+}
