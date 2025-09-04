@@ -1,35 +1,32 @@
 {
   "Prerequisites": [
     {
-  "Name": "Microsoft .NET Framework 4.8 or later",
-  "Description": "Required for general Litera Compare functionality.",
-  "Link": "https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48",
-  "DetectionPattern": "NET Framework 4.8"
-   },
+      "Name": "Microsoft .NET Framework 4.8 or later",
+      "Description": "Required for general Litera Compare functionality.",
+      "Link": "https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48",
+      "DetectionPattern": "NET Framework 4.8"
+    },
     {
       "Name": "Microsoft Visual Studio 2010 Tools for Office Runtime",
       "Description": "Required for Office integration.",
-      "DetectionPattern": "Microsoft Visual Studio 2010 Tools for Office Runtime",
-      "Link": "https://www.microsoft.com/en-us/download/details.aspx?id=48217"
+      "Link": "https://www.microsoft.com/en-us/download/details.aspx?id=48217",
+      "DetectionPattern": "Visual Studio 2010 Tools for Office Runtime"
     },
     {
-      "Name": "Microsoft Visual Studio C++ Redistributable 2015-2022",
-      "Description": "Required for OCR functionality and 64-bit systems.",
+      "Name": "Litera OCR Module Requirements",
+      "Description": "For the Litera OCR module, used for comparing scanned PDF files.",
       "Requirements": [
         {
           "Name": "Microsoft Visual Studio C++ Redistributable 2015-2022 for x86 or later",
-          "Description": "Required for OCR functionality.",
-          "DetectionPattern": "Microsoft Visual C\\+\\+ 2015-2022 Redistributable \\(x86\\)",
-          "Link": "https://aka.ms/vs/17/release/vc_redist.x86.exe"
+          "Link": "https://aka.ms/vs/17/release/vc_redist.x86.exe",
+          "DetectionPattern": "Visual C++.*2015-2022.*x86"
         },
         {
           "Name": "Microsoft Visual Studio C++ Redistributable 2015-2022 for x64 or later",
-          "Description": "Required in addition to x86 if the server is a 64-bit system.",
-          "DetectionPattern": "Microsoft Visual C\\+\\+ 2015-2022 Redistributable \\(x64\\)",
-          "Link": "https://aka.ms/vs/17/release/vc_redist.x64.exe"
+          "Link": "https://aka.ms/vs/17/release/vc_redist.x64.exe",
+          "DetectionPattern": "Visual C++.*2015-2022.*x64"
         }
       ]
     }
   ]
 }
-
