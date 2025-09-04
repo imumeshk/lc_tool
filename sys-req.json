@@ -20,26 +20,26 @@
   },
   "SupportedEnvironments": {
     "Notes": "Unless otherwise stated, all environments are the English version with the en-us language set.",
-    "OperatingSystem": [
+    "OperatingSystem": {
       "Microsoft Windows 11 (64-bit) - 21H2 and above with .NET Framework 4.8.1 installed (22H2 and above include .NET Framework 4.8.1)",
       "Microsoft Windows 10 (32-bit and 64-bit) - 20H2 and above with .NET Framework 4.8.1 installed"
-    ],
+    },
     "Citrix": {
-      "Versions": [
+      "Versions": {
         "Microsoft Windows Server 2022 (64-bit) and above",
         "Citrix XenApp 7.5",
         "Citrix XenDesktop 7.5"
-      ],
+      },
       "Notes": "Check with your Citrix vendor about which Windows operating system supports your version of Citrix."
     },
     "MicrosoftOffice": {
-      "Versions": [
+      "Versions": {
         "Microsoft Office 2024 (32-bit and 64-bit)",
         "Microsoft Office 2021 (32-bit and 64-bit)",
         "Microsoft Office 365 (desktop)",
         "Microsoft Office 2019 (32-bit and 64-bit) — including click-to-run",
         "Microsoft Office 2016 (32-bit and 64-bit) — including click-to-run"
-      ],
+      },
       "Notes": [
         "If Litera Compare 11.13.0 is being installed on the same computer as Metadact, Metadact must be version 5.19.0 or later.",
         "Litera Compare can only be installed in a Windows environment. If you’re a Mac user, you can use Parallels Desktop or VMware Fusion. Not compatible with Mac Mini M1 running Parallels Desktop."
@@ -74,3 +74,4 @@
     "Epona": []
   }
 }
+
