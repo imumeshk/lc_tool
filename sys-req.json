@@ -1,55 +1,16 @@
 {
-  "SystemRequirements": {
-    "RecommendedHardware": {
-      "Processor": "2.0+ GHz processor",
-      "Memory": {
-        "Minimum": "4 GB RAM",
-        "Recommended": "8 GB RAM"
-      },
-      "DiskSpace": "Minimum 2 GB hard drive space"
-    },
-    "OCRHardware": {
-      "Processor": "2.0+ GHz processor with minimum dual cores",
-      "Memory": {
-        "Minimum": "8 GB RAM",
-        "Recommended": "16 GB RAM"
-      },
-      "DiskSpace": "20 MB temporary disk space for each PDF file being processed – multiply by the maximum projected number of concurrent OCR sessions",
-      "Notes": "PDF/Word comparison requires OCR. OCR and text extraction are CPU- and disk-intensive."
-    }
-  },
-  "SupportedEnvironments": {
-    "Notes": "Unless otherwise stated, all environments are the English version with the en-us language set.",
-    "OperatingSystem": {
-      "Microsoft Windows 11 (64-bit) - 21H2 and above with .NET Framework 4.8.1 installed (22H2 and above include .NET Framework 4.8.1)",
-      "Microsoft Windows 10 (32-bit and 64-bit) - 20H2 and above with .NET Framework 4.8.1 installed"
-    },
-    "Citrix": {
-      "Versions": {
-        "Microsoft Windows Server 2022 (64-bit) and above",
-        "Citrix XenApp 7.5",
-        "Citrix XenDesktop 7.5"
-      },
-      "Notes": "Check with your Citrix vendor about which Windows operating system supports your version of Citrix."
-    },
-    "MicrosoftOffice": {
-      "Versions": {
-        "Microsoft Office 2024 (32-bit and 64-bit)",
-        "Microsoft Office 2021 (32-bit and 64-bit)",
-        "Microsoft Office 365 (desktop)",
-        "Microsoft Office 2019 (32-bit and 64-bit) — including click-to-run",
-        "Microsoft Office 2016 (32-bit and 64-bit) — including click-to-run"
-      },
-      "Notes": [
-        "If Litera Compare 11.13.0 is being installed on the same computer as Metadact, Metadact must be version 5.19.0 or later.",
-        "Litera Compare can only be installed in a Windows environment. If you’re a Mac user, you can use Parallels Desktop or VMware Fusion. Not compatible with Mac Mini M1 running Parallels Desktop."
-      ]
-    }
-  },
   "DMSIntegration": {
-    "Notes": "Check with your Document Management System (DMS) vendor about which Windows operating system supports your DMS.",
+    "Epona": [],
     "NetDocuments": [
       "ndOffice must be installed to use the Litera NetDocuments integration."
+    ],
+    "Notes": "Check with your Document Management System (DMS) vendor about which Windows operating system supports your DMS.",
+    "OpenText": [
+      "eDOCS DM 16.5 and above",
+      "eDOCS DM 10.0"
+    ],
+    "SharePoint": [
+      "Microsoft SharePoint Online"
     ],
     "iManage": {
       "Clients": [
@@ -57,21 +18,60 @@
         "Work 10 web client (requires Litera iManage Extension Server (LiMES) or connection to LiMES Cloud)"
       ],
       "Notes": [
-        "If you use a Work 10.2 server, it must include iManage Work Web Server 10.2.0.91 (requested from iManage with reference CSAR-2673).",
-        "Microsoft Edge WebView2 is required for iManage integration. If using iManage Work Desktop 10.5 and above, Microsoft Edge WebView2 is likely already installed."
+        "If using Work 10.2 server, it must include iManage Work Web Server 10.2.0.91 (requested from iManage with reference CSAR-2673).",
+        "Microsoft Edge WebView2 is required for iManage integration. For iManage Work Desktop 10.5 and above, Edge WebView2 is likely already installed."
       ]
     },
-    "SharePoint": [
-      "Microsoft SharePoint Online"
-    ],
-    "OpenText": [
-      "eDOCS DM 16.5 and above",
-      "eDOCS DM 10.0"
-    ],
     "Worldox": [
       "GX4 (32-bit only)"
-    ],
-    "Epona": []
+    ]
+  },
+  "SupportedEnvironments": {
+    "Citrix": {
+      "Notes": "Check with your Citrix vendor about which Windows operating system supports your version of Citrix.",
+      "Versions": [
+        "Microsoft Windows Server 2022 (64-bit) and above",
+        "Citrix XenApp 7.5",
+        "Citrix XenDesktop 7.5"
+      ]
+    },
+    "MicrosoftOffice": {
+      "Notes": [
+        "If Litera Compare 11.13.0 is being installed on the same computer as Metadact, Metadact must be version 5.19.0 or later.",
+        "Litera Compare can only be installed in a Windows environment. Mac users may use Parallels Desktop or VMware Fusion to emulate Windows. Not compatible with Mac Mini M1 running Parallels Desktop."
+      ],
+      "Versions": [
+        "Microsoft Office 2024 (32-bit and 64-bit)",
+        "Microsoft Office 2021 (32-bit and 64-bit)",
+        "Microsoft Office 365 (desktop)",
+        "Microsoft Office 2019 (32-bit and 64-bit) — including click-to-run",
+        "Microsoft Office 2016 (32-bit and 64-bit) — including click-to-run"
+      ]
+    },
+    "Notes": "Unless otherwise stated, all environments are the English version with en-us language set.",
+    "OperatingSystem": [
+      "Microsoft Windows 11 (64-bit) - 21H2 and above with .NET Framework 4.8.1 installed (22H2 and above include .NET Framework 4.8.1)",
+      "Microsoft Windows 10 (32-bit and 64-bit) - 20H2 and above with .NET Framework 4.8.1 installed"
+    ]
+  },
+  "SystemRequirements": {
+    "Notes": "Unless otherwise stated, all requirements assume an English version with en-us language set.",
+    "OCRHardware": {
+      "DiskSpace": "20 MB temporary disk space per PDF file – multiply by the maximum projected number of concurrent OCR sessions",
+      "Memory": [
+        "Minimum: 8 GB RAM",
+        "Recommended: 16 GB RAM"
+      ],
+      "Notes": "PDF/Word comparison requires OCR. OCR and text extraction are CPU- and disk-intensive.",
+      "Processor": "2.0+ GHz processor with minimum dual cores"
+    },
+    "RecommendedHardware": {
+      "DiskSpace": "Minimum 2 GB hard drive space",
+      "Memory": [
+        "Minimum: 4 GB RAM",
+        "Recommended: 8 GB RAM"
+      ],
+      "Processor": "2.0+ GHz processor"
+    }
   }
 }
-
