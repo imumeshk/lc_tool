@@ -1,26 +1,27 @@
 {
   "SystemRequirements": {
+    "Notes": "Unless otherwise stated, all requirements assume an English version with en-us language set.",
     "RecommendedHardware": {
       "Processor": "2.0+ GHz processor",
-      "Memory": {
-        "Minimum": "4 GB RAM",
-        "Recommended": "8 GB RAM"
-      },
+      "Memory": [
+        "Minimum: 4 GB RAM",
+        "Recommended: 8 GB RAM"
+      ],
       "DiskSpace": "Minimum 2 GB hard drive space"
     },
     "OCRHardware": {
       "Processor": "2.0+ GHz processor with minimum dual cores",
-      "Memory": {
-        "Minimum": "8 GB RAM",
-        "Recommended": "16 GB RAM"
-      },
-      "DiskSpace": "20 MB temporary disk space for each PDF file being processed – multiply by the maximum projected number of concurrent OCR sessions",
+      "Memory": [
+        "Minimum: 8 GB RAM",
+        "Recommended: 16 GB RAM"
+      ],
+      "DiskSpace": "20 MB temporary disk space per PDF file – multiply by the maximum projected number of concurrent OCR sessions",
       "Notes": "PDF/Word comparison requires OCR. OCR and text extraction are CPU- and disk-intensive."
     }
   },
   "SupportedEnvironments": {
-    "Notes": "Unless otherwise stated, all environments are the English version with the en-us language set.",
-    "OperatingSystems": [
+    "Notes": "Unless otherwise stated, all environments are the English version with en-us language set.",
+    "OperatingSystem": [
       "Microsoft Windows 11 (64-bit) - 21H2 and above with .NET Framework 4.8.1 installed (22H2 and above include .NET Framework 4.8.1)",
       "Microsoft Windows 10 (32-bit and 64-bit) - 20H2 and above with .NET Framework 4.8.1 installed"
     ],
@@ -42,7 +43,7 @@
       ],
       "Notes": [
         "If Litera Compare 11.13.0 is being installed on the same computer as Metadact, Metadact must be version 5.19.0 or later.",
-        "Litera Compare can only be installed in a Windows environment. If you’re a Mac user, you can use a third-party vendor application like Parallels Desktop or VMware Fusion to emulate Windows and then install Litera Compare in the emulator. However, Litera Compare is not compatible with Mac Mini M1 running Parallels Desktop."
+        "Litera Compare can only be installed in a Windows environment. Mac users may use Parallels Desktop or VMware Fusion to emulate Windows. Not compatible with Mac Mini M1 running Parallels Desktop."
       ]
     }
   },
@@ -57,8 +58,8 @@
         "Work 10 web client (requires Litera iManage Extension Server (LiMES) or connection to LiMES Cloud)"
       ],
       "Notes": [
-        "If you use a Work 10.2 server, it must include iManage Work Web Server 10.2.0.91 (requested from iManage with reference CSAR-2673).",
-        "Microsoft Edge WebView2 is required for iManage integration. If using iManage Work Desktop 10.5 and above, Microsoft Edge WebView2 is likely already installed."
+        "If using Work 10.2 server, it must include iManage Work Web Server 10.2.0.91 (requested from iManage with reference CSAR-2673).",
+        "Microsoft Edge WebView2 is required for iManage integration. For iManage Work Desktop 10.5 and above, Edge WebView2 is likely already installed."
       ]
     },
     "SharePoint": [
