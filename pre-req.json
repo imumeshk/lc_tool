@@ -1,10 +1,10 @@
 {
   "Prerequisites": [
     {
-      "Name": "Microsoft .NET Framework 4.9 or later",
+      "Name": "Microsoft .NET Framework 4.8.1 or later",
       "Description": "Required for general Litera Compare functionality.",
       "Link": "https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48",
-      "DetectionPattern": "NET Framework 4.8"
+      "DetectionPattern": "NET Framework 4.8.1"
     },
     {
       "Name": "Microsoft Visual Studio 2010 Tools for Office Runtime",
@@ -30,4 +30,5 @@
     }
   ]
 }
+
 
